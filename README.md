@@ -25,3 +25,11 @@ This repository contains:
     ```\(src/.*/```
 * WNDW mediawiki markup file converted from markdown (.wiki)
     * Execute `cat wndw.md | pandoc -s -S -r mediawiki -o wndw.wiki`
+* Then, we moved all of the images into a single image folder using three commands:
+```
+find /src/* -type f -iname ".png" -exec mv --backup=numbered -t /images {} +
+find /src/* -type f -iname ".jpeg" -exec mv --backup=numbered -t /images {} +
+find /src/* -type f -iname ".pdf" -exec mv --backup=numbered -t /images {} +
+```
+* Then, we fixed the image references in the markdown files:
+
