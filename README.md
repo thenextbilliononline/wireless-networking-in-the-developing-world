@@ -18,9 +18,9 @@ This repository contains:
         * With VIM, I used `:%s/\!\[\](\./\!\[\](src/g`
     * Using a terminal, run the command  
 	``` cd /src`````
-	```find /src/* -type f-iname ".png" -exec mv --backup=numbered -t .//images {} +```
-	```find /src/* -type f-iname ".pdf" -exec mv --backup=numbered -t .//images {} +```
-	```find /src/* -type f -iname ".jpeg" -exec mv --backup=numbered -t /images {} +```
+	```find /src/* -type f-iname ".png" -exec mv --backup=numbered -t .//images {} +```  
+	```find /src/* -type f-iname ".pdf" -exec mv --backup=numbered -t .//images {} +```  
+	```find /src/* -type f -iname ".jpeg" -exec mv --backup=numbered -t /images {} +```  
 	This moves all images into a root directory of images for easy of portability.
     * Then we must use global search and replace with atom using the regular expression below.
     ```\(src/.*/```
