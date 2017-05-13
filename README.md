@@ -26,6 +26,6 @@ This repository contains:
     ```\(src/.*/```
 * WNDW mediawiki markup file converted from markdown (.wiki)
     * Execute `cat wndw.md | pandoc -s -S -r mediawiki -o wndw.wiki`
-* Then, we moved all of the images into a single image folder using three commands:
+
 ```
 
