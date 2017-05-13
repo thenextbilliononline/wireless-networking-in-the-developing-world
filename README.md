@@ -20,16 +20,12 @@ This repository contains:
 	``` cd /src`````
 	```find /src/* -type f-iname ".png" -exec mv --backup=numbered -t .//images {} +```
 	```find /src/* -type f-iname ".pdf" -exec mv --backup=numbered -t .//images {} +```
+	```find /src/* -type f -iname ".jpeg" -exec mv --backup=numbered -t /images {} +```
 	This moves all images into a root directory of images for easy of portability.
-    * Then we must use a text editor to change the links in the markdown file to point to the new folder. Regex below.
+    * Then we must use global search and replace with atom using the regular expression below.
     ```\(src/.*/```
 * WNDW mediawiki markup file converted from markdown (.wiki)
     * Execute `cat wndw.md | pandoc -s -S -r mediawiki -o wndw.wiki`
 * Then, we moved all of the images into a single image folder using three commands:
 ```
-find /src/* -type f -iname ".png" -exec mv --backup=numbered -t /images {} +
-find /src/* -type f -iname ".jpeg" -exec mv --backup=numbered -t /images {} +
-find /src/* -type f -iname ".pdf" -exec mv --backup=numbered -t /images {} +
-```
-* Then, we fixed the image references in the markdown files:
 
