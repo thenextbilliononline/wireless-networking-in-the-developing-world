@@ -17,7 +17,7 @@ This repository contains:
     * Do a search/replace to update image locations in markdown.
         * With VIM, I used `:%s/\!\[\](\./\!\[\](src/g`
     * Using a terminal, run the command  
-	``` cd /src````  
+	``` cd /src```  
 	```find /src/* -type f-iname ".png" -exec mv --backup=numbered -t .//images {} +```  
 	```find /src/* -type f-iname ".pdf" -exec mv --backup=numbered -t .//images {} +```  
 	```find /src/* -type f -iname ".jpeg" -exec mv --backup=numbered -t /images {} +```  
